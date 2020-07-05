@@ -1,0 +1,30 @@
+body {
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: floralwhite;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+}
+
+form {
+    margin: auto;
+    width: 70vw;
+    height: 70vw;
+    text-align: center;
+    background-color: burlywood;
+    padding-top: 10px;
+}
+
+textarea {
+    width: 30vw;
+    height: 30vw;
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+}
