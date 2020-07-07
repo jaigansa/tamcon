@@ -28,8 +28,7 @@ h2 {
 
 form {
     margin: auto;
-    width: 90vw;
-    height: auto;
+    width: width: -moz-available;
     text-align: center;
     background-color: var(--coral);
     padding-top: 10px;
