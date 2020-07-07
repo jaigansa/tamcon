@@ -6,11 +6,11 @@ Permission liciense CC BY-NC-SA
 */
 
 /*
- _____   _     __  __  ___  _               _____  ____      _     _   _ 
-|_   _| / \   |  \/  ||_ _|| |             |_   _||  _ \    / \   | \ | |
-  | |  / _ \  | |\/| | | | | |      _____    | |  | |_) |  / _ \  |  \| |
-  | | / ___ \ | |  | | | | | |___  |_____|   | |  |  _ <  / ___ \ | |\  |
-  |_|/_/   \_\|_|  |_||___||_____|           |_|  |_| \_\/_/   \_\|_| \_|
+ _____   _     __  __            ____        _   _ 
+|_   _| / \   |  \/  |          / ___| ___  | \ | |
+  | |  / _ \  | |\/| |  _____  | |    / _ \ |  \| |
+  | | / ___ \ | |  | | |_____| | |___| (_) || |\  |
+  |_|/_/   \_\|_|  |_|          \____|\___/ |_| \_|
 
 */
 console.log("TAMIL - TRAN");
@@ -21,9 +21,22 @@ function getbamini() {
     var usrdata = document.getElementById("sourceText").value;
     var clear = '';
     document.getElementById("targetText").innerHTML = clear;
-    var prodata = bamini(usrdata);
+    var prodata = UniBamini(usrdata);
 };
 
+function gettscii() {
+    var usrdata = document.getElementById("sourceText").value;
+    var clear = '';
+    document.getElementById("targetText").innerHTML = clear;
+    var prodata = UniTscii(usrdata);
+};
+
+function gettab() {
+    var usrdata = document.getElementById("sourceText").value;
+    var clear = '';
+    document.getElementById("targetText").innerHTML = clear;
+    var prodata = UniTab(usrdata);
+};
 
 // clear data ...
 
