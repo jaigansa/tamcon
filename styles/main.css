@@ -1,11 +1,10 @@
 /* CSS */
 
 :root {
-    --indigo-dye: #083D77;
-    --beige: #EBEBD3;
-    --cerise: #DA4167;
-    --orange-yellow: #F4D35E;
-    --coral: #F78764;
+    --bg: #f0ece3;
+    --secondary: #dfd3c3;
+    --primary: #c7b198;
+    --accent: #596e79;
     --white: #ffffff;
 }
 
@@ -13,24 +12,25 @@ body {
     margin: 0;
     padding: 0;
     font-family: Montserrat, Comfortaa;
-    background-color: var(--beige);
+    background-color: var(--bg);
 }
 
 h1 {
+    color: var(--accent);
     text-align: center;
     font-variant-caps: all-petite-caps;
 }
 
 h2 {
-    color: var(--beige);
-    font-family: comfortaa;
+    color: var(--accent);
+    font-family: comfortaa, monospace;
 }
 
 form {
     margin: auto;
     width: width: -moz-available;
     text-align: center;
-    background-color: var(--coral);
+    background-color: var(--secondary);
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -40,23 +40,39 @@ form {
 textarea {
     width: 90%;
     height: 100px;
-    color: var(--indigo-dye);
+    color: var(--accent);
+    background: #ffffff50;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    filter: grayscale(50%) sepia(10.3%);
+}
+
+textarea,
+[contenteditable] {
+  color: #666;
+  caret-color: red;
 }
 
 ::placeholder {
-    color: var(--indigo-dye);
-    font-size: 1.5em;
+    color: var(--primary);
+    font-size: 14px;
 }
+
+
+/* Start to button section */
 
 #switch-section {
     padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 button {
     margin: 10px;
-    background-color: var(--cerise);
-    color: var(--white);
+    background-color: var(--accent);
+    color: var(--bg);
     font-weight: 900;
+    vertical-align: middle;
 }
 
 .fancy-button {
@@ -82,4 +98,12 @@ button {
 
 .material-icons {
     vertical-align: middle;
+}
+
+
+/* footer */
+
+footer{
+  text-align: center;
+  color: var(--primary)
 }
