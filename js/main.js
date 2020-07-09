@@ -54,3 +54,13 @@ function copydata() {
     document.execCommand("copy");
     alert("Copied the text: " + copyText.value);
 }
+
+// Reset all data ...
+
+function resetdata() {
+    var clear = '';
+    document.getElementById("targetText").innerHTML = clear;
+    document.getElementById("sourceText").innerHTML = clear;
+
+
+}
